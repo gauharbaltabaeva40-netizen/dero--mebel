@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#10100f">
-  <meta name="description" content="DERO MEBEL жиһаз дүкенінің ашылу салтанатына шақыру. 19 қазан 2026 жыл, сағат 10:00.">
+  <meta name="description" content="DERO MEBEL жиһаз дүкенінің ашылу салтанатына шақыру. 19 қазан 2026 жыл, сағат 14:00.">
   <title>DERO MEBEL — Ашылу салтанаты</title>
   <style>
     :root{--gold:#c8a66a;--muted:#b9b1a2;--bg:#10100f;--paper:#f5f0e7}
@@ -73,7 +73,7 @@
         <div class="datebox">
           <div><strong>19</strong><small>ҚАЗАН</small></div>
           <div style="height:48px;width:1px;background:#c8a66a77"></div>
-          <div><strong>10:00</strong><small>БАСТАЛУ УАҚЫТЫ</small></div>
+          <div><strong>14:00</strong><small>БАСТАЛУ УАҚЫТЫ</small></div>
           <div style="height:48px;width:1px;background:#c8a66a77"></div>
           <div><strong>2026</strong><small>ЖЫЛ</small></div>
         </div>
@@ -100,13 +100,12 @@
           <div class="goldcard">
             <div class="infoicon">◷</div>
             <div class="infoheading">КҮНІ МЕН УАҚЫТЫ</div>
-            <div class="infotext">19 қазан, 2026 жыл<br>Дүйсенбі · 10:00</div>
+            <div class="infotext">19 қазан, 2026 жыл<br>Дүйсенбі · 14:00</div>
           </div>
           <div class="goldcard">
             <div class="infoicon">⌖</div>
             <div class="infoheading">ӨТЕТІН ОРНЫ</div>
-            <div class="infotext" id="dero-address">Мекенжай нақтылануда</div>
-            <p class="sans" style="font-size:11px;color:#a69c8c;line-height:1.7">Нақты мекенжай кейін осы сайтқа қосылады.</p>
+            <div class="infotext" id="dero-address">Нажимеденов 15</div>
           </div>
         </div>
         <div style="text-align:center;margin-top:28px">
@@ -122,7 +121,7 @@
           <h2 style="font-size:34px">Кездескенше!</h2>
           <p class="bodycopy" style="max-width:400px;margin:0 auto">Осы қуанышты сәттің куәсі болып, бізбен бірге болыңыз.</p>
           <div class="line" style="max-width:120px;margin:24px auto"></div>
-          <div class="eyebrow">19.10.2026 · 10:00</div>
+          <div class="eyebrow">19.10.2026 · 14:00</div>
         </div>
       </div>
     </section>
@@ -170,14 +169,13 @@
   </footer>
 
   <script>
-    // Мекенжайды кейін осы жерден өзгертуге болады.
-    const STORE_ADDRESS = "Мекенжай нақтылануда";
+    const STORE_ADDRESS = "Нажимеденов 15";
     document.getElementById("dero-address").textContent = STORE_ADDRESS;
 
     document.getElementById("dero-calendar").addEventListener("click", function () {
       const ics = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//DERO MEBEL//Invitation//KK",
-        "BEGIN:VEVENT", "DTSTART:20261019T050000Z", "DTEND:20261019T060000Z",
+        "BEGIN:VEVENT", "DTSTART:20261019T090000Z", "DTEND:20261019T100000Z",
         "SUMMARY:DERO MEBEL ашылу салтанаты",
         "DESCRIPTION:Сізді DERO MEBEL ашылу салтанатына шақырамыз.",
         "LOCATION:" + STORE_ADDRESS, "END:VEVENT", "END:VCALENDAR"
@@ -200,7 +198,7 @@
       const guests = document.getElementById("dero-guests").value;
       invitationText = "DERO MEBEL ашылу салтанаты\nЕсімі: " + name +
         "\nҚатысуы: " + attendance + "\nҚонақ саны: " + guests +
-        "\nКүні: 19.10.2026, 10:00\nМекенжай: " + STORE_ADDRESS;
+        "\nКүні: 19.10.2026, 14:00\nМекенжай: " + STORE_ADDRESS;
       note.textContent = "WhatsApp ашылуда. Хабарламаны жіберу үшін WhatsApp ішінде жіберу батырмасын басыңыз.";
       copyButton.style.display = "inline-flex";
       const whatsappUrl = "https://wa.me/77766070077?text=" + encodeURIComponent(invitationText);
